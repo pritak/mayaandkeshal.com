@@ -1,0 +1,166 @@
+// 1. Import the initial variables
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/functions";
+
+$family-sans-serif: "Apercu", "Roboto", sans-serif;
+$nav-button-right-spacing: 0px;
+$rose:#F8F0EC;
+$navbar-background-color: $rose;
+$yellow: #EA9A48;
+$purple: #2F1D42;
+$navbar-height: 3rem;
+$column-gap: 2rem;
+$footer-background-color: #0A0909;
+$link: #C86A5B;
+
+html,body{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.box-outer{
+  background-color: #FCF7F7 !important;
+}
+
+.navbar-menu{
+  box-shadow: none;
+}
+
+#global-nav {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  height: 110px;
+  width: 100%;
+  line-height: 150px;
+    -webkit-transition: height .5s, line-height .5s; /* Safari */
+    transition: height .5s, line-height .5s;
+}
+
+.scrolled-nav {
+  height: 40px !important;
+  line-height: 60px !important;
+}
+
+.rsvp{
+  background-color: $rose;
+}
+
+
+.travel-column{
+  padding-right: 4em !important;
+}
+
+.header{
+  color: $rose !important;
+}
+
+.event-name{
+  color: white !important;
+  font-weight: 800;
+  font-size: 1.1em;
+}
+
+.schedule{
+  background-color: #051631;
+  color:white;
+}
+
+.date{
+  font-weight: 800;
+  font-size: 1.1em;
+}
+
+.main-title{
+  bottom: 0 !important;
+}
+
+.title{
+  font-size: 4em !important;
+}
+
+.logo{
+  color: #D86357;
+}
+
+.button{
+  white-space: normal !important;
+}
+
+.column-couple-text{
+  padding-left: 3em !important;
+  padding-top: 5em !important;
+  padding-right: 2em !important;
+}
+
+
+.faq-text{
+  padding-left: 2em !important;
+  margin-top: 0.7em !important;
+}
+
+.faq{
+  background-image: url("../images/faq-background.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.underline{
+  border-bottom: 3px solid currentColor;
+  padding-bottom: 6px;
+}
+
+.upper-subtitle{
+  font-weight: 600;
+}
+
+h1{
+  line-height: 110% !important;
+}
+
+p{
+  margin-top: 1em !important;
+  font-weight: 400;
+  color: grey;
+  line-height: 1.6em;
+}
+
+.the-couple{
+  background-image: url("../images/c-background.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.main{
+  background-color: $rose;
+  border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url("../images/bottom-border.svg") 50 round; /* Safari 3.1-5 */
+    -o-border-image: url("../images/bottom-border.svg") 50 round; /* Opera 11-12.1 */
+    border-image: url("../images/bottom-border.svg") 50 round;
+}
+
+.main-text{
+  opacity: 0.7;
+  font-size: 5.1em;
+  line-height: 0.8em;
+  font-weight: 800;
+  color: $purple;
+}
+
+.main-image{
+  overflow: hidden;
+}
+
+.heart{
+  font-size: 1.3em;
+  color: $rose;
+}
+
+.footer-text{
+  font-size: 0.9em;
+  color: $rose !important;
+}
+@import "../../node_modules/bulma/bulma";
