@@ -90,7 +90,7 @@ $(window).bind("mousewheel", function () {
 });
 
 window.sr = ScrollReveal();
-sr.reveal('#main-2', { origin: 'right', duration: 600, delay: 50, distance: '100px', opacity: 0, scale: 0.7, reset: true });
+sr.reveal('#main', { origin: 'top', duration: 1200, delay: 50, distance: '100px', opacity: 0, scale: 0.7, reset: true });
 
 sr.reveal('#couple-1', { origin: 'top', duration: 1000, delay: 100, distance: '200px', opacity: 0, scale: 1, reset: true });
 sr.reveal('#couple-2', { origin: 'top', duration: 1000, delay: 100, distance: '200px', opacity: 0, scale: 1, reset: true });
@@ -114,7 +114,7 @@ sr.reveal('#travel-2', { origin: 'top', duration: 600, delay: 50, distance: '50p
 sr.reveal('#travel-3', { origin: 'top', duration: 1000, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
 sr.reveal('#travel-4', { origin: 'top', duration: 1000, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
 
-sr.reveal('#rsvp', { origin: 'right', duration: 900, delay: 0, distance: '700px', opacity: 0, scale: 0.7, reset: true });
+sr.reveal('#rsvp', { origin: 'right', duration: 900, delay: 0, distance: '300px', opacity: 0, scale: 0.7, reset: true });
 
 sr.reveal('#faq', { origin: 'top', duration: 600, delay: 150, distance: '50px', opacity: 0, scale: 1, reset: true });
 
