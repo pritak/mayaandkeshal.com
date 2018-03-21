@@ -16,7 +16,7 @@ html, body {
 }
 
 .box-outer {
-  background-color: #FCF7F7 !important;
+  background-color: rgba(240, 226, 223, 0.253) !important;
 }
 
 .navbar-menu {
@@ -157,11 +157,32 @@ p {
   color: #F5E5E5 !important;
 }
 
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 @media only screen and (max-width: 768px) {
   .column-couple-text {
     padding-left: 2em !important;
     padding-top: 2em !important;
     padding-right: 2em !important;
+  }
+  .the-couple {
+    background-image: none;
+  }
+  .faq {
+    background-image: none;
   }
 }
 

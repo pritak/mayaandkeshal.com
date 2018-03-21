@@ -1,20 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1338px" height="797px" viewBox="0 0 1338 797" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
-    <title>c-background</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.099071558" font-family="Apercu" font-size="180" font-weight="bold" letter-spacing="1.20000005">
-        <g id="Group" transform="translate(-16.000000, -46.000000)" fill="#EA5A52">
-            <text id="M">
-                <tspan x="0" y="172">M</tspan>
-            </text>
-            <text id="K">
-                <tspan x="1186.53" y="843">K</tspan>
-            </text>
-            <text id="+">
-                <tspan x="1258.84" y="187">+</tspan>
-            </text>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1600 1300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g id="Group" transform="matrix(1,0,0,1,115,205.5)">
+        <g transform="matrix(1.76486,0,0,1.82149,-108.716,300.175)">
+            <g id="M">
+                <path d="M39.6,0L39.6,-77.76L63.72,-11.52L80.64,-11.52L104.76,-77.76L104.76,0L128.16,0L128.16,-126L101.88,-126L72.18,-47.34L42.48,-126L16.2,-126L16.2,0L39.6,0Z" style="fill:rgb(239,221,218);fill-opacity:0.360784;fill-rule:nonzero;stroke:rgb(239,221,218);stroke-opacity:0.0980392;stroke-width:0.56px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1.73548,0,0,1.79117,1168.23,1039.73)">
+            <g id="K">
+                <path d="M16.2,0L39.6,0L39.6,-60.12L85.32,0L115.02,0L60.3,-69.66L111.42,-126L82.62,-126L39.6,-79.2L39.6,-126L16.2,-126L16.2,0Z" style="fill:rgb(239,221,218);fill-opacity:0.360784;fill-rule:nonzero;stroke:rgb(239,221,218);stroke-opacity:0.0980392;stroke-width:0.57px;"/>
+            </g>
+        </g>
+        <g transform="matrix(2.00405,0,0,2.06835,1284.98,114.002)">
+            <g id="_-" serif:id="+">
+                <path d="M43.02,-66.78L9.9,-66.78L9.9,-47.34L43.02,-47.34L43.02,-14.22L62.46,-14.22L62.46,-47.34L95.58,-47.34L95.58,-66.78L62.46,-66.78L62.46,-99.9L43.02,-99.9L43.02,-66.78Z" style="fill:rgb(239,221,218);fill-opacity:0.360784;fill-rule:nonzero;stroke:rgb(239,221,218);stroke-opacity:0.0980392;stroke-width:0.49px;"/>
+            </g>
         </g>
     </g>
 </svg>
