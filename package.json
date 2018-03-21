@@ -27,6 +27,11 @@
     "imagemin-jpeg-recompress": "^5.1.0",
     "surge": "^0.19.0"
   },
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./dist --domain mayaandkeshal.com"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -4,7 +4,6 @@
 
 html, body {
   overflow-x: hidden;
-  overflow-y: auto;
 }
 
 .table {
@@ -6145,7 +6144,7 @@ a.dropdown-item.is-active {
 }
 
 .navbar {
-  background-color: white;
+  background-color: #F5E5E5;
   min-height: 3rem;
   position: relative;
 }
@@ -6879,7 +6878,7 @@ a.navbar-link.is-active {
     display: flex;
   }
   .navbar-menu {
-    background-color: white;
+    background-color: #F5E5E5;
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0;
   }
@@ -7078,7 +7077,7 @@ a.navbar-link.is-active {
   }
   a.navbar-item.is-active,
   a.navbar-link.is-active {
-    color: #0a0a0a;
+    color: #C86A5B;
   }
   a.navbar-item.is-active:not(:hover),
   a.navbar-link.is-active:not(:hover) {

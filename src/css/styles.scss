@@ -6,11 +6,13 @@ $family-sans-serif: "Apercu", "Roboto", sans-serif;
 $nav-button-right-spacing: 0px;
 $rose:#F5E5E5;
 $yellow: #EA9A48;
+$navbar-background-color: $rose;
 $purple: #2F1D42;
 $navbar-height: 3rem;
 $column-gap: 2rem;
 $footer-background-color: #0A0909;
 $link: #C86A5B;
+$navbar-item-active-color: $link;
 $table-cell-border-width: 0 0 0px;
 $table-cell-border: none;
 $table-background-color: none;
@@ -23,7 +25,6 @@ $table-cell-padding: 0 0em;
 
 html,body{
   overflow-x: hidden;
-  overflow-y: auto;
 }
 
 .table{

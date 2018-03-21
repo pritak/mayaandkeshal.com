@@ -4,9 +4,9 @@ $(document).ready(function () {
     scrollTop = $(window).scrollTop();
     $('.counter').html(scrollTop);
 
-    if (scrollTop >= 350) {
+    if (scrollTop >= 200) {
       $('#global-nav').addClass('scrolled-nav');
-    } else if (scrollTop < 350) {
+    } else if (scrollTop < 200) {
       $('#global-nav').removeClass('scrolled-nav');
     }
 
@@ -14,42 +14,76 @@ $(document).ready(function () {
 
 });
 
-// Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function (event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-      &&
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top - 50
-        }, 1300, function () {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
+$(document).ready(function () {
+  $(document).on("scroll", onScroll);
+  
+  //smoothscroll
+  $('a[href^="#"]').on('click', function (e) {
+      e.preventDefault();
+      $(document).off("scroll");
+      
+      $('a').each(function () {
+          $(this).removeClass('is-active');
+      })
+      $(this).addClass('is-active');
+    
+      var target = this.hash,
+          menu = target;
+      $target = $(target);
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top+1
+      }, 700, 'swing', function () {
+          window.location.hash = target;
+          $(document).on("scroll", onScroll);
+      });
   });
+});
+
+function onScroll(event){
+  var scrollPos = $(document).scrollTop();
+  $('#main-menu a').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('#main-menu a').removeClass("is-active");
+          currLink.addClass("is-active");
+      }
+      else{
+          currLink.removeClass("is-active");
+      }
+  });
+}
+
+(function($) {
+  $(document).ready(function() {
+      var navChildren = $("#top-menu li").children();
+      var aArray = [];
+      for (var i = 0; i < navChildren.length; i++) {
+          var aChild = navChildren[i];
+          var ahref = $(aChild).attr('href');
+          aArray.push(ahref);
+      }
+      $(window).scroll(function() {
+          var windowPos = $(window).scrollTop();
+          var windowHeight = $(window).height();
+          var docHeight = $(document).height();
+          for (var i = 0; i < aArray.length; i++) {
+              var theID = aArray[i];
+              var secPosition = $(theID).offset().top;
+              secPosition = secPosition - 135;
+              var divHeight = $(theID).height();
+              divHeight = divHeight + 90;
+              if (windowPos >= secPosition && windowPos < (secPosition + divHeight)) {
+                  $("a[href='" + theID + "']").parent().addClass("active");
+              } else {
+                  $("a[href='" + theID + "']").parent().removeClass("active");
+              }
+          }
+      });
+   
+  });
+  })(jQuery);
+
 
 $(window).bind("mousewheel", function () {
   $("html, body").stop();
@@ -58,31 +92,31 @@ $(window).bind("mousewheel", function () {
 window.sr = ScrollReveal();
 sr.reveal('#main-2', { origin: 'right', duration: 600, delay: 50, distance: '100px', opacity: 0, scale: 0.7, reset: true });
 
-sr.reveal('#couple-1', { origin: 'bottom', duration: 1000, delay: 100, distance: '200px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#couple-2', { origin: 'bottom', duration: 1000, delay: 100, distance: '200px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#couple-3', { origin: 'bottom', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#couple-1', { origin: 'top', duration: 1000, delay: 100, distance: '200px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#couple-2', { origin: 'top', duration: 1000, delay: 100, distance: '200px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#couple-3', { origin: 'top', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
 sr.reveal('#couple-4', { origin: 'right', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
 sr.reveal('#couple-5', { origin: 'left', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#couple-6', { origin: 'bottom', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#couple-6', { origin: 'top', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
 sr.reveal('#couple-7', { origin: 'right', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
 sr.reveal('#couple-8', { origin: 'left', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#couple-9', { origin: 'bottom', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#couple-10', { origin: 'bottom', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#couple-9', { origin: 'top', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#couple-10', { origin: 'top', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
 
-sr.reveal('#schedule', { origin: 'bottom', duration: 600, delay: 150, distance: '50px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#schedule', { origin: 'top', duration: 600, delay: 150, distance: '50px', opacity: 0, scale: 1, reset: true });
 sr.reveal('#schedule-1', { origin: 'left', duration: 600, delay: 150, distance: '50px', opacity: 0, scale: 1, reset: true });
 sr.reveal('#schedule-2', { origin: 'right', duration: 1000, delay: 150, distance: '100px', opacity: 0, scale: 1, reset: true });
 
-sr.reveal('#full-image', { origin: 'bottom', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#full-image', { origin: 'top', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
 
 sr.reveal('#travel-1', { origin: 'top', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
 sr.reveal('#travel-2', { origin: 'top', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#travel-3', { origin: 'bottom', duration: 1000, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#travel-4', { origin: 'bottom', duration: 1000, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#travel-3', { origin: 'top', duration: 1000, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#travel-4', { origin: 'top', duration: 1000, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
 
 sr.reveal('#rsvp', { origin: 'right', duration: 900, delay: 0, distance: '700px', opacity: 0, scale: 0.7, reset: true });
 
-sr.reveal('#faq', { origin: 'bottom', duration: 600, delay: 150, distance: '50px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#faq', { origin: 'top', duration: 600, delay: 150, distance: '50px', opacity: 0, scale: 1, reset: true });
 
 
 
