@@ -4,9 +4,9 @@ $(document).ready(function () {
     scrollTop = $(window).scrollTop();
     $('.counter').html(scrollTop);
 
-    if (scrollTop >= 100) {
+    if (scrollTop >= 350) {
       $('#global-nav').addClass('scrolled-nav');
-    } else if (scrollTop < 100) {
+    } else if (scrollTop < 350) {
       $('#global-nav').removeClass('scrolled-nav');
     }
 
@@ -34,8 +34,8 @@ $('a[href*="#"]')
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function () {
+          scrollTop: target.offset().top - 50
+        }, 1300, function () {
           // Callback after animation
           // Must change focus!
           var $target = $(target);
@@ -51,27 +51,27 @@ $('a[href*="#"]')
     }
   });
 
+$(window).bind("mousewheel", function () {
+  $("html, body").stop();
+});
+
 window.sr = ScrollReveal();
 sr.reveal('#main-2', { origin: 'right', duration: 600, delay: 50, distance: '100px', opacity: 0, scale: 0.7, reset: true });
 
 sr.reveal('#couple-1', { origin: 'bottom', duration: 1000, delay: 100, distance: '200px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#couple-2', { origin: 'right', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#couple-3', { origin: 'left', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#couple-2', { origin: 'bottom', duration: 1000, delay: 100, distance: '200px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#couple-3', { origin: 'bottom', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
 sr.reveal('#couple-4', { origin: 'right', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
 sr.reveal('#couple-5', { origin: 'left', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#couple-6', { origin: 'right', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#couple-7', { origin: 'left', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#couple-8', { origin: 'right', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#couple-9', { origin: 'left', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#couple-10', { origin: 'right', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#couple-11', { origin: 'bottom', duration: 600, delay: 150, distance: '50px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#couple-12', { origin: 'bottom', duration: 600, delay: 150, distance: '50px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#couple-6', { origin: 'bottom', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#couple-7', { origin: 'right', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#couple-8', { origin: 'left', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#couple-9', { origin: 'bottom', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#couple-10', { origin: 'bottom', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
 
 sr.reveal('#schedule', { origin: 'bottom', duration: 600, delay: 150, distance: '50px', opacity: 0, scale: 1, reset: true });
 sr.reveal('#schedule-1', { origin: 'left', duration: 600, delay: 150, distance: '50px', opacity: 0, scale: 1, reset: true });
 sr.reveal('#schedule-2', { origin: 'right', duration: 1000, delay: 150, distance: '100px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#schedule-3', { origin: 'left', duration: 600, delay: 150, distance: '50px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#schedule-4', { origin: 'right', duration: 1000, delay: 150, distance: '100px', opacity: 0, scale: 1, reset: true });
 
 sr.reveal('#full-image', { origin: 'bottom', duration: 600, delay: 50, distance: '50px', opacity: 0, scale: 1, reset: true });
 

@@ -1,6 +1,19 @@
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
 html, body {
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.table {
+  width: 100%;
+}
+
+.small-text {
+  font-weight: bold;
+  font-size: 60%;
 }
 
 .box-outer {
@@ -12,6 +25,7 @@ html, body {
 }
 
 #global-nav {
+  background-color: transparent;
   position: fixed;
   top: 0;
   z-index: 9999;
@@ -24,20 +38,21 @@ html, body {
 }
 
 .scrolled-nav {
+  background-color: #F5E5E5 !important;
   height: 40px !important;
   line-height: 60px !important;
 }
 
 .rsvp {
-  background-color: #F8F0EC;
+  background-color: #F5E5E5;
 }
 
 .travel-column {
-  padding-right: 4em !important;
+  padding-right: 1.6em !important;
 }
 
 .header {
-  color: #F8F0EC !important;
+  color: white !important;
 }
 
 .event-name {
@@ -118,14 +133,7 @@ p {
 }
 
 .main {
-  background-color: #F8F0EC;
-  border: 10px solid transparent;
-  padding: 15px;
-  -webkit-border-image: url("../images/bottom-border.svg") 50 round;
-  /* Safari 3.1-5 */
-  -o-border-image: url("../images/bottom-border.svg") 50 round;
-  /* Opera 11-12.1 */
-  border-image: url("../images/bottom-border.svg") 50 round;
+  background-color: #F5E5E5;
 }
 
 .main-text {
@@ -142,12 +150,20 @@ p {
 
 .heart {
   font-size: 1.3em;
-  color: #F8F0EC;
+  color: #F5E5E5;
 }
 
 .footer-text {
   font-size: 0.9em;
-  color: #F8F0EC !important;
+  color: #F5E5E5 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .column-couple-text {
+    padding-left: 2em !important;
+    padding-top: 2em !important;
+    padding-right: 2em !important;
+  }
 }
 
 /*! bulma.io v0.6.2 | MIT License | github.com/jgthms/bulma */
@@ -4621,16 +4637,16 @@ a.box:active {
 }
 
 .table {
-  background-color: white;
-  color: #363636;
+  background-color: none;
+  color: white;
   margin-bottom: 1.5rem;
 }
 
 .table td,
 .table th {
-  border: 1px solid #dbdbdb;
-  border-width: 0 0 1px;
-  padding: 0.5em 0.75em;
+  border: none;
+  border-width: 0 0 0px;
+  padding: 0 0em;
   vertical-align: top;
 }
 
@@ -6129,7 +6145,7 @@ a.dropdown-item.is-active {
 }
 
 .navbar {
-  background-color: #F8F0EC;
+  background-color: white;
   min-height: 3rem;
   position: relative;
 }
@@ -6863,7 +6879,7 @@ a.navbar-link.is-active {
     display: flex;
   }
   .navbar-menu {
-    background-color: #F8F0EC;
+    background-color: white;
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0;
   }
