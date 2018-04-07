@@ -120,7 +120,7 @@ html,body{
 
 .date{
   font-weight: 300;
-  font-size: 1.3em;
+  font-size: 1.2em;
   color: grey;
 }
 
@@ -134,11 +134,6 @@ html,body{
 
 .logo{
   color: $link;
-}
-
-tag{
-  white-space: normal !important;
-  width: 100px !important;
 }
 
 .column-couple-text{
@@ -216,6 +211,10 @@ p{
 
 .quiz{
   background-image: url("../images/geometry.png");
+}
+
+#proposal{
+  border-radius: 10px;
 }
 
 #main{
@@ -316,7 +315,10 @@ p{
   .schedule{
     background-image: none;
   }
-
 }
-
+@media only screen and (max-width: 1023px) {
+  .scrolled-nav {
+    height: 10px !important;
+  }
+}
 @import "../../node_modules/bulma/bulma";
