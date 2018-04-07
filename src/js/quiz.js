@@ -41,7 +41,7 @@ $(document).ready(function () {
                     var result = $("<div id='question' class='field is-size-4'><strong class='has-text-success'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> Pretty good! You must be quite close to Maya and Keshal... or you're a stalker</div></div>").hide();
                 }
                 else if (right < 7 && right >= 3){
-                    var result = $("<div id='question' class='field is-size-4'><strong class='has-text-warning'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> You've got some work to do! Scroll down and read up...</div></div>").hide();
+                    var result = $("<div id='question' class='field is-size-4'><strong class='orange'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> You've got some work to do! Scroll down and read up...</div></div>").hide();
                 }
                 else {
                     var result = $("<div id='question' class='field is-size-4'><strong class='has-text-danger'>You got " + right +"/9 right.</strong></br><div class='is-size-5'> Wow you did terribly! Do you even know Maya and Keshal!? Scroll down and take notes...</div></div>").hide();
@@ -59,7 +59,7 @@ $(document).ready(function () {
             $(".false").css("color", "black");
 
             $('#question').fadeOut("slow", function () {
-                var newQ = $("<div id='question' class='field'>Question " + (counter + 1) + "/9<label id='real-question' class='label is-size-5'>" + questions[counter][0] + "</label ></div >").hide();
+                var newQ = $("<div id='question' class='field'><strong>Question " + (counter + 1) + "/9</strong><label id='real-question' class='label is-size-5'>" + questions[counter][0] + "</label ></div >").hide();
                 $(this).replaceWith(newQ);
                 $('#question').fadeIn("slow");
             });

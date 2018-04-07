@@ -68,6 +68,10 @@ html,body{
   display: none;
 }
 
+.orange{
+  color: orange;
+}
+
 .pace .pace-progress {
   background:$link;
   position: fixed;
@@ -289,7 +293,13 @@ p{
   position:absolute;
 }
 
-@media (orientation: portrait) {
+@media (orientation: portrait) and (min-width: 600px){
+  #main{
+    background-image: url("../images/c-3-color-slim-ipad.jpg");
+  }
+}
+
+@media (orientation: portrait) and (max-width: 600px){
   #main{
     background-image: url("../images/c-3-color-slim.jpg");
   }
