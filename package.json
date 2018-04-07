@@ -9,6 +9,7 @@
     "url": "http://github.com/pritak/mayaandkeshal.com.git"
   },
   "dependencies": {
+    "airtable": "^0.5.2",
     "bulma": "^0.6.1",
     "jquery": "^3.2.1",
     "scrollreveal": "^3.3.6"

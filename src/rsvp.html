@@ -3,12 +3,12 @@
 
 <head>
 
-  <title>Maya & Keshal</title>
+  <title>M&K - RSVP</title>
 
   <meta charset="utf-8">
-  <meta property="og:title" content="Maya & Keshal" />
+  <meta property="og:title" content="M&K - RSVP" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://mayaandkeshal.com" />
+  <meta property="og:url" content="http://mayaandkeshal.com/rsvp.html" />
   <meta property="og:description" content="The wedding of Maya and Keshal" />
   <meta property="og:image" content="http://mayaandkeshal.com/images/c-3-color.jpg" />
   <meta property="fb:admins" content="prit4k" />
@@ -55,8 +55,8 @@
           <a class="navbar-item" href="travel.html">
             <strong>Travel & Accomodations</strong>
           </a>
-          <a class="navbar-item" href="rsvp.html">
-            <strong>RSVP</strong>
+          <a class="navbar-item is-active" href="rsvp.html">
+            <strong class="tag is-size-6 is-link">RSVP</strong>
           </a>
           <a class="navbar-item" href="faq.html">
             <strong>FAQs</strong>
@@ -66,14 +66,58 @@
     </div>
   </nav>
 
-  <section id="main" class="hero is-fullheight animated zoomIn">
+  <section id="rsvp" class="hero section is-fullheight">
+    <div class="columns is-centered">
+      <div class="column is-6">
+        <br>
+        <br class="is-hidden-mobile">
+        <br class="is-hidden-mobile">
+        <br class="is-hidden-mobile">
+        <span class="is-size-2 rsvp-label-2">
+          <strong id="rsvp-title">Say You'll Be There!</strong>
+        </span>
+        <br>
+        <br>
+
+        <div id="rsvp-box" class="box">
+          <div id="rsvp-initial">
+            <div class="field">
+              <label class="label is-medium">Let's find your RSVP</label>
+              <div class="control">
+                <input id="email-input" class="input is-medium" type="text" placeholder="Email address">
+              </div>
+              <p id="help-message" class="help">Enter the email address that your invitation was sent to</p>
+              <div class="field">
+                <p class="control">
+                  <button id="check-email" onclick="checkEmail()" class="button is-link is-medium">
+                    Continue
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <div class="is-size-7">
+      <center>
+        Designed & developed with love by Pritak
+        <br> For any questions and/or concerns please email
+        <a href="mailto:hello@mayaandkeshal.com">hello@mayaandkeshal.com</a>
+      </center>
+    </div>
   </section>
 
   <!--<Deject>-->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="../node_modules/airtable/build/airtable.browser.js"></script>
   <script src="js/scroll-animations.js"></script>
+  <script src="js/rsvp.js"></script>
   <script src="js/navigation.js"></script>
   <script src="js/quiz.js"></script>
   <script src="js/pace.js"></script>
