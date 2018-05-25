@@ -42,8 +42,8 @@ sr.reveal('#travel-2', { origin: 'top', duration: 1100, delay: 110, distance: '5
 sr.reveal('#travel-3', { origin: 'top', duration: 1500, delay: 110, distance: '50px', opacity: 0, scale: 1, reset: true });
 sr.reveal('#travel-4', { origin: 'top', duration: 1500, delay: 110, distance: '50px', opacity: 0, scale: 1, reset: true });
 
-sr.reveal('#rsvp-box', { origin: 'top', duration: 1500, delay: 110, distance: '100px', opacity: 0, scale: 1, reset: true });
-sr.reveal('#rsvp-title', { origin: 'top', duration: 1500, delay: 110, distance: '100px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#rsvp-box', { origin: 'top', duration: 1500, delay: 110, distance: '60px', opacity: 0, scale: 1, reset: true });
+sr.reveal('#rsvp', { origin: 'top', duration: 800, delay: 110, distance: '100px', opacity: 0, scale: 1, reset: true });
 
 sr.reveal('#faq', { origin: 'top', duration: 1100, delay: 200, distance: '50px', opacity: 0, scale: 1, reset: true });
 
