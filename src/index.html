@@ -43,7 +43,17 @@
 
 
 <body>
-  <nav id="global-nav" class="navbar is-fixed-top is-transparent">
+  <div id="registry-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content animated bounceIn">
+      <div class="notification is-link">
+        <button id="modal-close" class="delete"></button>
+        Your presence is present enough. Seriously. But for the stubborn among you, we simply ask that you don't bring boxed gifts
+        since we will be so far from home!
+      </div>
+    </div>
+  </div>
+  <nav id="global-nav" class="navbar is-fixed-top is-transparent animated slideInDown">
     <div class="container">
       <div class="navbar-brand">
         <a id="logo" class="navbar-item" href="index.html">
@@ -69,6 +79,9 @@
           <a class="navbar-item" href="rsvp.html">
             <strong>RSVP</strong>
           </a>
+          <a class="navbar-item" id="registry-click">
+            <strong>Registry</strong>
+          </a>
           <a class="navbar-item" href="faq.html">
             <strong>FAQs</strong>
           </a>
@@ -77,7 +90,7 @@
     </div>
   </nav>
 
-  <section id="main" class="hero is-fullheight animated zoomIn">
+  <section id="main" class="hero is-fullheight animated fadeIn">
   </section>
 
   <!--<Deject>-->
