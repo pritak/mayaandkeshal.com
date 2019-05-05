@@ -1,5 +1,5 @@
 var Airtable = require('airtable');
-var base = new Airtable({ apiKey: 'keywa5ZLO1p8Ktr3k' }).base('apprgAOTwWeThXI1O');
+var base = new Airtable({ apiKey: 'API_KEY_HERE' }).base('BASE_KEY_HERE');
 var id, names, invites, rsvpNum, updatedNames;
 var emailInput = document.getElementById("email-input");
 
