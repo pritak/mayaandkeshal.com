@@ -68,11 +68,11 @@ html, body {
 }
 
 #global-nav {
-  background-color: transparent;
+  background-color: #8B0000;
   position: fixed;
   top: 0;
   z-index: 9999;
-  height: 110px;
+  height: 80px;
   width: 100%;
   line-height: 150px;
   -webkit-transition: height .5s, line-height .5s;
@@ -114,7 +114,11 @@ html, body {
 }
 
 .logo {
-  color: #d72185;
+  font-size: medium;
+  position: relative;
+  font: 400 30px/0.8 'Cookie', Helvetica, sans-serif;
+  color: rgb(201, 139, 5);
+  text-align: center;
 }
 
 .column-couple-text {
@@ -199,12 +203,54 @@ p {
 }
 
 #main {
-  background-image: url("../images/c-3-color.jpg");
+  background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
+  
 }
+#main-container{
+  padding-top: 60px;
+  margin-top: 79px;
+  margin-left: 79px;
+}
+
+#aditi-and-mayank{
+  font-size: medium;
+  left: 50%;
+  bottom: 65%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font: 400 100px/0.6 'Great Vibes', Helvetica, sans-serif;
+  color: darkred;
+  text-align: center;
+}
+
+#date-and-location{
+  font-size: medium;
+  position: relative;
+  font: 400 40px/0.6 'Cookie', Helvetica, sans-serif;
+  color: rgb(201, 139, 5);
+  text-align: center;
+}
+#index_picture {
+  height : 500px;
+  width : 800px;
+  top: 55%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%)
+
+}
+#aditi-weds-mayank{
+  font-size: small;
+  text-align: center;
+  position: relative;
+  font: 400 40px/0.6 'Cookie', Helvetica, sans-serif;
+  color: darkred;
+}
+
 
 #rsvp {
   background-image: url("../images/geometry2.png");
@@ -476,11 +522,11 @@ a {
 }
 
 a strong {
-  color: currentColor;
+  color: #4cfc07;
 }
 
 a:hover {
-  color: #363636;
+  color: #ff3860;
 }
 
 code {
@@ -1016,7 +1062,7 @@ a.has-text-black:hover, a.has-text-black:focus {
 .has-text-light {
   color: whitesmoke !important;
 }
-
+/*
 a.has-text-light:hover, a.has-text-light:focus {
   color: #dbdbdb !important;
 }
@@ -1042,9 +1088,9 @@ a.has-text-primary:hover, a.has-text-primary:focus {
 }
 
 a.has-text-link:hover, a.has-text-link:focus {
-  color: #ab1a6a !important;
+  color: #aba91a !important;
 }
-
+*/
 .has-text-info {
   color: #209cee !important;
 }
@@ -7421,6 +7467,7 @@ html.has-navbar-fixed-bottom {
 
 .navbar-menu {
   display: none;
+  /*color: #4a4a4a; */
 }
 
 .navbar-item,
