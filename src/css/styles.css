@@ -522,11 +522,11 @@ a {
 }
 
 a strong {
-  color: #4cfc07;
+  color: currentColor;
 }
 
 a:hover {
-  color: #ff3860;
+  color: #363636;
 }
 
 code {
@@ -1062,10 +1062,11 @@ a.has-text-black:hover, a.has-text-black:focus {
 .has-text-light {
   color: whitesmoke !important;
 }
-/*
+
 a.has-text-light:hover, a.has-text-light:focus {
   color: #dbdbdb !important;
 }
+
 
 .has-text-dark {
   color: #363636 !important;
@@ -1083,14 +1084,15 @@ a.has-text-primary:hover, a.has-text-primary:focus {
   color: #009e86 !important;
 }
 
+
 .has-text-link {
   color: #d72185 !important;
 }
 
 a.has-text-link:hover, a.has-text-link:focus {
-  color: #aba91a !important;
+  color: #ab1a6a !important;
 }
-*/
+
 .has-text-info {
   color: #209cee !important;
 }
