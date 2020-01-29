@@ -1,12 +1,12 @@
 {
-  "name": "mayaandkeshal.com",
+  "name": "aditiandmayank.com",
   "version": "1.0.0",
-  "homepage": "http://mayaandkeshal.com",
-  "description": "The wedding of Maya and Keshal",
+  "homepage": "http://aditiandmayank.com",
+  "description": "The wedding of Aditi and Mayank",
   "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "http://github.com/pritak/mayaandkeshal.com.git"
+    "url": "http://github.com/aditigupta307/aditiandmayank.com.git"
   },
   "dependencies": {
     "airtable": "^0.5.2",
@@ -30,12 +30,12 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "surge --project ./dist --domain mayaandkeshal.com"
+      "pre-push": "surge --project ./dist --domain aditiandmayank.com"
     }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Pritak Patel",
+  "author": "Aditi Gupta",
   "license": "ISC"
 }
