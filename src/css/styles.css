@@ -118,7 +118,17 @@ html, body {
   position: relative;
   font: 400 30px/0.8 'Cookie', Helvetica, sans-serif;
   color: rgb(201, 139, 5);
-  text-align: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.menu-items {
+  font-size: medium;
+  position: relative;
+  font: 400 30px/0.8 'Cookie', Helvetica, sans-serif;
+  color: rgb(201, 139, 5);
+  align-items: center;
+  padding: 0.5rem 1rem;
 }
 
 .column-couple-text {
@@ -1058,6 +1068,15 @@ a.has-text-white:hover, a.has-text-white:focus {
 a.has-text-black:hover, a.has-text-black:focus {
   color: black !important;
 }
+
+.logo:hover{
+color : rgb(224, 108, 31);
+}
+
+.menu-items:hover{
+  color : rgb(224, 108, 31);
+  } 
+
 
 .has-text-light {
   color: whitesmoke !important;
@@ -7621,7 +7640,7 @@ a.navbar-link.is-active {
   .navbar-end {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
-            align-items: stretch;
+            align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7643,7 +7662,7 @@ a.navbar-link.is-active {
   }
   .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
     background-color: whitesmoke;
-    color: #d72185;
+    color: rgb(224, 108, 31);
   }
   .navbar-burger {
     display: none;
