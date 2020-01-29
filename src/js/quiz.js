@@ -1,7 +1,7 @@
 var counter = 0;
 var right = 0;
 var questions = [
-    ["Where did Maya and Keshal meet?", "Spring break, Miami - cliché, we know", "At Columbia University, obviously", "Through a friend who set them up - Hi, Friend! You know who you are ;)", "In the one Anthropology class Keshal took while at Columbia. It was called 'Magic, Witchcraft and Religion'. He thought it 'sounded cool'.", "1"],
+    ["Where did Aditi and Mayank meet?", "Winter break, Florida - cliché, we know", "At Georgia Tech, obviously", "Through a friend who set them up - Hi, Friend! You know who you are ;)", "In the one Computer Science class Aditi took while at Georgia Tech.", "1"],
     ["How long have they been together?", "6 years", "7 years", "8 years", "An eternity. Seriously, what took them so long?", "4"],
     ["How long were they in a long distance relationship?", "They were in a long distance relationship??", "3 years", "4 years", "5 years", "4"],
     ["Where did they get engaged?", "Miami, Florida - where it all began", "Lisbon, Portugal - Maya thought it was a vacation with Keshal's family", "Boston, Massachusetts - on a random Sunday, with Otis Redding on the record player, over brunch", "New York City, New York - it was a full on flash mob", "2"],
