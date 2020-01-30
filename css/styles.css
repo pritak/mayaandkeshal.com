@@ -44,6 +44,11 @@ html, body {
   display: none;
 }
 
+:root {
+--gold-highlight : rgb(201, 139, 5);
+--orange-highlight : rgb(224, 108, 31);
+--red-menu-bar: #8B0000;
+}
 .orange {
   color: orange;
 }
@@ -68,7 +73,7 @@ html, body {
 }
 
 #global-nav {
-  background-color: #8B0000;
+  background-color: var(--red-menu-bar);
   position: fixed;
   top: 0;
   z-index: 9999;
@@ -81,7 +86,7 @@ html, body {
 }
 
 .scrolled-nav {
-  background-color: #F9F9FA !important;
+  background-color: var(--red-menu-bar) !important;
   height: 60px !important;
   line-height: 60px !important;
 }
@@ -117,7 +122,7 @@ html, body {
   font-size: medium;
   position: relative;
   font: 400 30px/0.8 'Cookie', Helvetica, sans-serif;
-  color: rgb(201, 139, 5);
+  color: var(--gold-highlight);
   align-items: center;
   padding: 0.5rem 1rem;
 }
@@ -126,7 +131,16 @@ html, body {
   font-size: medium;
   position: relative;
   font: 400 30px/0.8 'Cookie', Helvetica, sans-serif;
-  color: rgb(201, 139, 5);
+  color: var(--gold-highlight);
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.menu-items-selected {
+  font-size: medium;
+  position: relative;
+  font: 400 30px/0.8 'Cookie', Helvetica, sans-serif;
+  color: var(--orange-highlight);
   align-items: center;
   padding: 0.5rem 1rem;
 }
@@ -241,7 +255,7 @@ p {
   font-size: medium;
   position: relative;
   font: 400 40px/0.6 'Cookie', Helvetica, sans-serif;
-  color: rgb(201, 139, 5);
+  color: var(--gold-highlight);
   text-align: center;
 }
 #index_picture {
@@ -1070,13 +1084,16 @@ a.has-text-black:hover, a.has-text-black:focus {
 }
 
 .logo:hover{
-color : rgb(224, 108, 31);
+color : var(--orange-highlight);
 }
 
 .menu-items:hover{
-  color : rgb(224, 108, 31);
+  color : var(--orange-highlight);
   } 
-
+  
+.menu-items-selected:hover{
+  color : var(--orange-highlight);
+}
 
 .has-text-light {
   color: whitesmoke !important;
@@ -7662,7 +7679,7 @@ a.navbar-link.is-active {
   }
   .navbar.is-transparent .navbar-dropdown a.navbar-item.is-active {
     background-color: whitesmoke;
-    color: rgb(224, 108, 31);
+    color: var(--orange-highlight);
   }
   .navbar-burger {
     display: none;
